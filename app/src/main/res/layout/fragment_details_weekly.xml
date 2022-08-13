@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:background="@color/details_today_bg"
+  tools:context=".DetailsWeekly" >
+  <androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+      android:id="@+id/textView3"
+      android:layout_width="336dp"
+      android:layout_height="99dp"
+      android:text="@string/details_weekly_title"
+      android:textAlignment="center"
+      android:textColor="@color/white"
+      android:textSize="24sp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.508"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/constraintLayout13"
+      app:layout_constraintVertical_bias="0.12" />
+    <androidx.cardview.widget.CardView
+      android:id="@+id/cardView2"
+      android:layout_width="394dp"
+      android:layout_height="571dp"
+      android:background="@color/main_bg"
+      app:cardBackgroundColor="@color/details_today_bg"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/textView3">
+      <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="396dp"
+        android:layout_height="523dp">
+
+        <com.highsoft.highcharts.core.HIChartView
+          android:id="@+id/gague_chart"
+          android:layout_width="396dp"
+          android:layout_height="388dp"
+          android:layout_marginTop="88dp"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintHorizontal_bias="0.0"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="parent"></com.highsoft.highcharts.core.HIChartView>
+      </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+    <androidx.constraintlayout.widget.ConstraintLayout
+      android:id="@+id/constraintLayout13"
+      android:layout_width="394dp"
+      android:layout_height="0dp"
+      android:layout_marginBottom="1dp"
+      android:background="@color/black"
+      app:layout_constraintBottom_toTopOf="@+id/constraintLayout14"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.0"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent">
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+  </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>
